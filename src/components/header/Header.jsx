@@ -1,10 +1,18 @@
+import { useState } from "react"
 import { StyledHeader } from "./Header.style"
-function Header(){
+export default function Header(){
+    let [nome, setNome] = useState("user");
+    let nomeAtual = document.getElementById("inputNome");
     return (
         <StyledHeader>
-            <div>
-                <h2>Projeto React</h2>
+            <div className="logo">
+                <h2>Scar Store</h2>
             </div>
+            <span>{nome}</span>
+           <form>
+                <input type="text" name="inputNome" id="inputNome"/>
+                <button onClick={()=>setNome(nomeAtual.value)}>Submit</button>
+           </form>
             <nav>
                 <ul>
                     <li>Produtos</li>
@@ -17,4 +25,3 @@ function Header(){
     )
 }
 
-export default Header
