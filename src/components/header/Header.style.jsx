@@ -20,7 +20,7 @@ export const StyledHeader = styled.header`
         transition: 0.10s;
     }
 
-    ul{
+    Link{
         display:flex;
         flex-direction: row;
         gap: 1em;
