@@ -12,6 +12,7 @@ import { GlobalStyle } from './GlobalStyle.style';
 // 1 - Configurando Router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+
 const router = createBrowserRouter([
   {
     path: "/",

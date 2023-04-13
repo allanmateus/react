@@ -1,18 +1,27 @@
 import { StyledHeader } from "./Header.style"
-import { Link } from "react-router-dom"
-export default function Header(){   
+// import { Link } from "react-router-dom"
+
+function Header(){   
     return (
         <StyledHeader>
             <div className="logo">
-            <Link to="/"><h2>Scar Store</h2></Link>
+                {/* <StyledLink to="/inicial" id="ln"><h2 id="logo-name">Scar Store</h2></StyledLink>  */}
+                <a href="/inicial"><h2 id="logo-name">Scar Store</h2></a>
             </div>
             <nav className="menu">           
-                <Link to="/produtos"><span>Produtos</span></Link>
-                <Link to="/cadastro"><span>Cadastro</span></Link>
-                <Link to="/sobre"><span>Sobre</span></Link>
-                <Link to="/login"><span>Login</span></Link>
+                {/* <span><StyledLink to="/produtos">Produtos</StyledLink></span>
+                <span><StyledLink to="/cadastro">Cadastro</StyledLink></span> 
+                <span><StyledLink to="/sobre">Sobre</StyledLink></span>           
+                <span><StyledLink to="/login">Login</StyledLink></span>        */}
+
+                <a href="/produtos">Produtos</a>
+                <a href="/cadastro">Cadastro</a> 
+                <a href="/sobre">Sobre</a>           
+                <a href="/login">Login</a>
+
             </nav>
         </StyledHeader>
     )
 }
 
+export default Header

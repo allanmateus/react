@@ -1,7 +1,8 @@
 import  styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const StyledHeader = styled.header`
-    background-color: #d4cfd4;
+    background-color: #f3eff3;
     padding-inline: 4em;
     height: 4em;
     color: black;    
@@ -11,13 +12,20 @@ export const StyledHeader = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
     
-  
-    .logo:hover{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
         color:  #3914ce;
         font-style: italic;
         cursor: pointer;
         transition: 0.10s;
+        text-decoration: none;
+        
     }
 
     nav{
@@ -36,4 +44,3 @@ export const StyledHeader = styled.header`
         text-decoration: none;
     }
 `
-
