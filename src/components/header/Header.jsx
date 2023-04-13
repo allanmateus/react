@@ -7,10 +7,10 @@ export default function Header(){
             <Link to="/"><h2>Scar Store</h2></Link>
             </div>
             <nav className="menu">           
-                <Link to="/produtos">Produtos</Link>
-                <Link to="/cadastro">Cadastro</Link>
-                <Link to="/sobre">Sobre</Link>
-                <Link to="/login">Login</Link>
+                <Link to="/produtos"><span>Produtos</span></Link>
+                <Link to="/cadastro"><span>Cadastro</span></Link>
+                <Link to="/sobre"><span>Sobre</span></Link>
+                <Link to="/login"><span>Login</span></Link>
             </nav>
         </StyledHeader>
     )

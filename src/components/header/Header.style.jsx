@@ -20,18 +20,20 @@ export const StyledHeader = styled.header`
         transition: 0.10s;
     }
 
-    Link{
+    nav{
         display:flex;
         flex-direction: row;
         gap: 1em;
         list-style-type: none;
         cursor: pointer;
+        text-decoration: none;
     }
 
-    ul li:hover{
+    nav span:hover{
         color:  #3914ce;
         transition: 0.8s;
         font-style: italic;
+        text-decoration: none;
     }
 `
 
