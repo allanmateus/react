@@ -1,5 +1,3 @@
-import './App.css';
-
 import Header from './components/header/Header';
 import { Outlet } from "react-router-dom";
 
@@ -9,8 +7,13 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Outlet/>
-      
+      <body>
+        <h1 class="text-3xl font-bold underline">
+          Hello world!
+        </h1>
+      </body>
+      <Outlet/>    
+      <link rel="stylesheet" href="./tailwhind.css"/>
     </div>
   );
 }
