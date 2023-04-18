@@ -3,22 +3,15 @@ import { StyledHeader } from "./Header.style"
 
 function Header(){   
     return (
-        <StyledHeader>
+        <StyledHeader className="p-5 flex flex-row justify-between w-screen  h-2/6">
             <div className="logo">
-                {/* <StyledLink to="/inicial" id="ln"><h2 id="logo-name">Scar Store</h2></StyledLink>  */}
-                <a href="/inicial"><h2 id="logo-name">Scar Store</h2></a>
+                <a className="" href="/inicial"><h2 id="logo-name">Scar Store</h2></a>
             </div>
-            <nav className="menu">           
-                {/* <span><StyledLink to="/produtos">Produtos</StyledLink></span>
-                <span><StyledLink to="/cadastro">Cadastro</StyledLink></span> 
-                <span><StyledLink to="/sobre">Sobre</StyledLink></span>           
-                <span><StyledLink to="/login">Login</StyledLink></span>        */}
-
+            <nav className="space-x-3">           
                 <a href="/produtos">Produtos</a>
                 <a href="/cadastro">Cadastro</a> 
                 <a href="/sobre">Sobre</a>           
                 <a href="/login">Login</a>
-
             </nav>
         </StyledHeader>
     )

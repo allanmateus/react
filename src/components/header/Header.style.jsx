@@ -2,7 +2,7 @@ import  styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const StyledHeader = styled.header`
-    background-color: #f3eff3;
+    /* background-color: #f3eff3;
     padding-inline: 4em;
     height: 4em;
     color: black;    
@@ -42,5 +42,5 @@ export const StyledHeader = styled.header`
         transition: 0.8s;
         font-style: italic;
         text-decoration: none;
-    }
+    } */
 `
