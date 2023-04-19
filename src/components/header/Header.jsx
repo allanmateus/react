@@ -3,16 +3,20 @@ import { StyledHeader } from "./Header.style"
 
 function Header(){   
     return (
-        <StyledHeader className="p-5 flex flex-row justify-between w-screen  h-2/6">
-            <div className="logo">
-                <a className="" href="/inicial"><h2 id="logo-name">Scar Store</h2></a>
+        <StyledHeader className="max-w-full w-full min-w-full">
+            <div className="container shadow-md py-5 px-10">
+                <div className=" flex flex-row justify-between flex flex-row">
+                    <div className="logo">
+                        <a className="hover:text-blue-600" href="/inicial"><h2 id="logo-name">Scar Store</h2></a>
+                    </div>  
+                    <nav className="space-x-3">           
+                        <a href="/produtos" className="hover:text-blue-600">Produtos</a>
+                        <a href="/cadastro" className="hover:text-blue-600">Cadastro</a> 
+                        <a href="/sobre" className="hover:text-blue-600">Sobre</a>           
+                        <a href="/login" className="hover:text-blue-600">Login</a>
+                    </nav>
+                </div>
             </div>
-            <nav className="space-x-3">           
-                <a href="/produtos">Produtos</a>
-                <a href="/cadastro">Cadastro</a> 
-                <a href="/sobre">Sobre</a>           
-                <a href="/login">Login</a>
-            </nav>
         </StyledHeader>
     )
 }
